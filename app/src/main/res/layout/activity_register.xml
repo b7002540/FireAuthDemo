@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+    <TextView
+        android:id="@+id/title_Register"
+        android:layout_width="182dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="40dp"
+        android:text="Register Page"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/till_register_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/till_register_password"
+        android:layout_width="0dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="92dp"
+        android:hint="Password"
+        app:layout_constraintBottom_toTopOf="@+id/register_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/till_register_email">
+
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="password"
+            tools:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="218dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="30dp"
+        android:text="register"
+        app:layout_constraintBottom_toTopOf="@+id/Till_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/till_register_password" />
+
+    <LinearLayout
+        android:id="@+id/Till_login"
+        android:layout_width="226dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="152dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_btn">
+
+        <TextView
+            android:id="@+id/login_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Already Have an Account? │ "
+            tools:layout_editor_absoluteX="118dp"
+            tools:layout_editor_absoluteY="443dp" />
+
+        <TextView
+            android:id="@+id/Login_page_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            tools:layout_editor_absoluteX="118dp"
+            tools:layout_editor_absoluteY="443dp" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/till_register_email"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="30dp"
+        android:hint="Email ID"
+        app:layout_constraintBottom_toTopOf="@+id/till_register_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_Register">
+
+        <EditText
+            android:id="@+id/register_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="abc@gmail.com"
+            tools:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
